@@ -6,8 +6,8 @@ const WeatherWidget = () => {
   // Declare state variables for weather data
   const [weather, setWeather] = useState(null);
   // Set API key and default city name
-  const API_KEY = '533db0fe660967a689d19e1ed590c056';
-  const DEFAULT_CITY_NAME = 'Portsmouth';
+  const API_KEY = 'de4cb065ea6318ef6005aa6b1817b37c';
+  const DEFAULT_CITY_NAME = 'london';
 
   // Function to fetch weather data by city name
   const fetchWeatherByCity = useCallback(
@@ -64,8 +64,13 @@ const WeatherWidget = () => {
   // Display weather data once it's available
   return (
     <div>
-      {weather.name}: {weather.main.temp}°C, {weather.weather[0].description}
-    </div>
+    {weather && weather.main ? (
+      `${weather.name}: ${weather.main.temp}°C, ${weather.weather[0].description}`
+    ) : (
+      'Weather data is not available'
+    )}
+  </div>    
+
   );
 };
 
