@@ -1,10 +1,13 @@
+import React from 'react';
 import Navbar from './components/Navbar';
+import TopHeader from './components/TopHeader';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <TopHeader />
+      <Navbar />      
     </div>
   );
 }
