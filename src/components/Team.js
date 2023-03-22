@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import staffData from '../assets/data/staff.json';
 import styles from './Team.module.css';
@@ -31,18 +30,5 @@ const Team = () => {
       </div>
     );
   };
-=======
-import React, { Component } from 'react';
-
-class Team extends Component {
-  render() {
-    return (
-      <div>
-        <p>Team</p>
-      </div>
-    );
-  }
-}
->>>>>>> NavBar
 
 export default Team;

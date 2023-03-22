@@ -1,20 +1,6 @@
 import React, {Component} from 'react';
 import Navbar from './components/Navbar';
 import TopHeader from './components/TopHeader';
-<<<<<<< HEAD
-import Team from './components/Team';
-import Footer from './components/Footer';
-
-
-function App() {
-  return (
-    <div>
-      <TopHeader />
-      <Team />
-      <Footer />
-    </div>
-  );
-=======
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home'
@@ -43,7 +29,6 @@ class App extends Component {
     </Router>
     );
   }
->>>>>>> NavBar
 }
 
 export default App;
