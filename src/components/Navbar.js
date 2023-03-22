@@ -7,8 +7,8 @@ class Navbar extends Component {
   return (
     
     <nav className="navbar navbar-expand-lg navbar-light bg-light row">
-      <a className="navbar-brand col-5" href="/home">
-      <Link to="/">Logo Img</Link>
+      <a className="navbar-brand col-5" href="/">
+      Logo Img
       </a>
       <button
         className="navbar-toggler"

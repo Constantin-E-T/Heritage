@@ -12,7 +12,7 @@ import Team from './components/Team';
 class App extends Component {
   render() {
     return (
-      <Router>
+    <Router>
         
        <div className="App">
         <TopHeader />
@@ -26,7 +26,7 @@ class App extends Component {
         </Routes>  
        </div>
         
-       </Router>
+    </Router>
     );
   }
 }
