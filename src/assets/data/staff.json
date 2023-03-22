@@ -1,0 +1,25 @@
+{
+    "staff": [
+      {
+        "id": 1,
+        "role": "Driver",
+        "name": "John Doe",
+        "truckRegistration": "AB-123-CD",
+        "profilePicture": "images/pexels-bruno-salvadori-2269872.jpg"
+      },
+      {
+        "id": 2,
+        "role": "Driver",
+        "name": "Jane Smith",
+        "truckRegistration": "EF-456-GH",
+        "profilePicture": "images/pexels-chloe-1043471.jpg"
+      },
+      {
+        "id": 3,
+        "role": "Manager",
+        "name": "Bob Johnson",
+        "profilePicture": "images/pexels-pixabay-220453.jpg"
+      }
+    ]
+  }
+  
