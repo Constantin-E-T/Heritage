@@ -8,6 +8,7 @@ import Contact from './components/Contact'
 import About from './components/AboutUs';
 import Services from './components/Services';
 import Team from './components/Team';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -23,7 +24,8 @@ class App extends Component {
           <Route path="/services" Component={Services}/>
           <Route path="/contact" Component={Contact}/>
           <Route path="/team" Component={Team}/>
-        </Routes>  
+        </Routes> 
+        <Footer />
        </div>
         
     </Router>
