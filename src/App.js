@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component} from 'react';
 import Navbar from './components/Navbar';
 import TopHeader from './components/TopHeader';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
