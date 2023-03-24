@@ -13,7 +13,7 @@ export default class Contact extends Component {
   this.state = {
     lng: -1.1013463074087266,
     lat: 50.80151276175477,
-    zoom: 16
+    zoom: 14
    };
    this.mapContainer = React.createRef();
   }

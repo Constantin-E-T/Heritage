@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { NavbarBrand } from 'reactstrap';
 import './Navbar.module.css';
 
 class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light row shadow-sm sticky-top">
-        <Link className="navbar-brand col-5" to="/Home">
-          Logo Img
-        </Link>
+        <NavbarBrand className="col-5"> 
+          <img class="hidden-xs" src='assets\images\heritageLogo.jpg' alt='Logo'/>
+        </NavbarBrand>
         <button
           className="navbar-toggler"
           type="button"
