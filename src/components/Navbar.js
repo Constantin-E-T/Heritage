@@ -25,7 +25,7 @@ class Navbar extends Component {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink className="nav-link" activeclassname={styles.active} to="/home">
+              <NavLink className="nav-link" activeclassname={styles.active} to="/">
                 Home
               </NavLink>
             </li>

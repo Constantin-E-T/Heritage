@@ -19,7 +19,7 @@ class App extends Component {
         <TopHeader />
         <Navbar />
         <Routes>
-          <Route path="/home" Component={Home} /> 
+          <Route path="/" Component={Home} /> 
           <Route path="/about" Component={About}/>
           <Route path="/services" Component={Services}/>
           <Route path="/contact" Component={Contact}/>
