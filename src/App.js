@@ -9,6 +9,7 @@ import About from './components/AboutUs';
 import Services from './components/Services';
 import Team from './components/Team';
 import Footer from './components/Footer';
+import MyChatbot from './components/Chatbot/Chatbot';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
     <Router>
         
        <div className="App">
+        <MyChatbot />
         <TopHeader />
         <Navbar />
         <Routes>

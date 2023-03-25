@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Home.module.css';
 
+
 const Home = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
