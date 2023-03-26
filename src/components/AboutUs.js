@@ -5,8 +5,11 @@ class About extends Component {
   render() {
     return (
       <div>
-        <div className="container">
+        <div className={`${styles.aboutContainer}`}>
           <h2 className={styles.section__title}>About Us</h2>
+          <br></br>
+          <br></br>
+          <br></br>
           <p className="mb-3">
             <span className={`${styles.highlight} ${styles.text__large}`}>
               Heritage Haulage
@@ -28,6 +31,9 @@ class About extends Component {
             groupage deliveries and full load shipments, we relentlessly fulfil
             all of your haulage requirements.
           </p>
+          <br></br>
+          <br></br>
+          <br></br>
         </div>
       </div>
     );

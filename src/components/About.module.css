@@ -1,12 +1,40 @@
+.aboutContainer{
+  position:relative;
+  display:block;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  padding:1rem;
+  margin-top: 0.5rem;
+  
+}
+
+.aboutContainer::before{
+  content:"";
+  background-image: url('../assets/images/tyreTracks.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity:0.3;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:auto;
+  height:auto;
+  z-index:-3;
+}
+
+/* above is test */
+
 .section__title {
     font-weight: bold;
     font-size: 1.5rem;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: rem;
   }
   
   .highlight {
-    color: #007bff;
+    color: #d4b080;
   }
   
   .text__large {
@@ -16,3 +44,5 @@
   .mb__3 {
     margin-bottom: 1rem;
   }
+
+
