@@ -1,6 +1,12 @@
 import React from 'react';
+<<<<<<< HEAD
 import ReactDOM from 'react-dom';
 import 'mapbox-gl/dist/mapbox-gl.css'
+=======
+import ReactDOM from 'react-dom/client';
+// import { createRoot } from 'react-dom/client';
+
+>>>>>>> ee558c266e78fc4b29e4868761bb258f2257247a
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
