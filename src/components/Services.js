@@ -35,16 +35,16 @@ class Services extends Component {
       <h4>Services</h4>
       <div id='service-text'>
         <p>Our modern fleet ensures reliable and efficient services, ranging from single pallet deliveries to full load shipments.</p>
-        <p>HH services include: Container Transport, Tautliners, Refrigerated Shipping, Full load shipments, Groupage deliveries and Single pallet deliveries</p>
+        <p>HH services include: Container Transport, Tautliners, Refrigerated Shipping, Full load shipments, Groupage deliveries and Single pallet deliveries.</p>
         <p>We deliver all over the UK including major cities such as London, Manchester, Birmingham, Glasgow, Leeds, Liverpool and more.</p>
       </div>
       <div class='row justify-content-center'>
         <ul id='port-locations' class='md-col-4'>
         <br></br>
           <h6>We work with several major ports across the UK.</h6>
-          <p>follow the links below</p>
+          <p>- follow the links below -</p>
           <br></br>
-            <p>
+            <p >
               Port of Southampton
             </p>
             <p>
