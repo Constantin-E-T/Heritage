@@ -6,6 +6,6 @@
     font-weight: bold;
   }
 
-  .nav {
-    background-color: darkkhaki;
+  .navbar-nav{
+   margin-right: 25px;
   }
