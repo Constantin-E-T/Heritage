@@ -54,7 +54,7 @@ export default class Contact extends Component {
               <div class="form-group">
                 <div data-netlify-recaptcha="true"></div>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-outline-warning">Submit</button>
           </form>
         </div>
     );
