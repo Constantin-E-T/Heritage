@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { NavbarBrand } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 import './Navbar.module.css';
+import heritageLogo from '../assets/images/heritageLogo.png';
 
 
 class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light row shadow-sm sticky-top">
-        <NavLink className="navbar-brand col-5" to="/">
-          Logo Img
+        <NavLink className="navbar-brand col-6" to="/">
+          <img style={{width: '350px', height: '120px'}} src={heritageLogo}/>
         </NavLink>
         <button
           className="navbar-toggler"
@@ -25,11 +25,6 @@ class Navbar extends Component {
 
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/home">
-                Home
-              </NavLink>
-            </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/about">
                 About Us

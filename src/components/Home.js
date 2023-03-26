@@ -24,8 +24,8 @@ const Home = () => {
             scrollPosition > 50 ? styles.scroll__animation : ''
           }`}
         >
-          <h1 className="display-4">Heritage Haulage</h1>
-          <p className="lead">Your trusted haulage partner</p>
+          <h1 className="display-4">Your trusted haulage partner</h1>
+          <h3 className="lead">Portsmouth. UK</h3>
         </div>
       </div>
       <div className="container">

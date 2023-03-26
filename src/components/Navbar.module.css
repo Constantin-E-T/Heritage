@@ -5,4 +5,7 @@
   .active {
     font-weight: bold;
   }
-  
+
+  .nav {
+    background-color: darkkhaki;
+  }
