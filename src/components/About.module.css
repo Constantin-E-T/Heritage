@@ -1,0 +1,18 @@
+.section__title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight {
+    color: #007bff;
+  }
+  
+  .text__large {
+    font-size: 1.25rem;
+  }
+  
+  .mb__3 {
+    margin-bottom: 1rem;
+  }
