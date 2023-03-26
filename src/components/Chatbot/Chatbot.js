@@ -17,7 +17,7 @@ const MyChatbot = () => {
     <div className="chatbot-container">
       <button
         onClick={toggleChat}
-        className="chatbot-button btn btn-primary rounded-circle shadow"
+        className="chatbot-button btn btn-outline-warning rounded-circle shadow"
       >
         <i className="fas fa-comment"></i>
       </button>
