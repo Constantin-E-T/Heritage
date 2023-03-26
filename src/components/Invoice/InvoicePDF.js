@@ -3,7 +3,7 @@ import { jsPDF } from 'jspdf';
 import 'jspdf-autotable';
 import { Button } from 'react-bootstrap';
 
-const InvoicePDF = ({ data }) => {
+const InvoicePDF = ({ data, onBack }) => {
   const generatePDF = () => {
     const doc = new jsPDF();
 
@@ -19,6 +19,9 @@ const InvoicePDF = ({ data }) => {
       {/* Display the invoice data in a preview format */}
       <Button variant="success" onClick={generatePDF}>
         Download Invoice
+      </Button>
+      <Button variant="secondary" onClick={onBack} className="ml-2">
+        Back to Form
       </Button>
     </div>
   );

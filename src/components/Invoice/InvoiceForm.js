@@ -7,15 +7,34 @@ const InvoiceForm = () => {
   const [invoiceData, setInvoiceData] = useState(null);
   const [showPDF, setShowPDF] = useState(false);
 
+  const [formData, setFormData] = useState({
+    customerName: '',
+    customerEmail: '',
+    invoiceItems: [],
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Process the form data and create the invoice object
-    setInvoiceData(/* invoice object */);
+    setInvoiceData(formData);
     setShowPDF(true);
   };
 
+  const handleBack = () => {
+    setFormData({
+      customerName: '',
+      customerEmail: '',
+      invoiceItems: [],
+    });
+    setShowPDF(false);
+  };
+
   if (showPDF) {
-    return <InvoicePDF data={invoiceData} />;
+    return <InvoicePDF data={invoiceData} onBack={handleBack} />;
   }
 
   return (
@@ -24,12 +43,31 @@ const InvoiceForm = () => {
       <Form onSubmit={handleSubmit}>
         <Row>
           <Col>
-            {/* Add form fields for the first column */}
+            <Form.Group controlId="customerName">
+              <Form.Label>Customer Name</Form.Label>
+              <Form.Control
+                type="text"
+                name="customerName"
+                value={formData.customerName}
+                onChange={handleChange}
+                required
+              />
+            </Form.Group>
           </Col>
           <Col>
-            {/* Add form fields for the second column */}
+            <Form.Group controlId="customerEmail">
+              <Form.Label>Customer Email</Form.Label>
+              <Form.Control
+                type="email"
+                name="customerEmail"
+                value={formData.customerEmail}
+                onChange={handleChange}
+                required
+              />
+            </Form.Group>
           </Col>
         </Row>
+        {/* Add more form fields as needed */}
         <Button variant="primary" type="submit">
           Generate Invoice
         </Button>
