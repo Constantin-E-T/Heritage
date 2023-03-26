@@ -36,9 +36,27 @@ export default class Contact extends Component {
   </Marker>
 </ReactMapGL>
     return (
-      <div>
-        <div ref={this.mapContainer} className="map-container" />
-      </div>
+      <div class='contact-container row'>
+        <div ref={this.mapContainer} className="map-container col-lg-8" />
+          <form class='contact col-lg-4' name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required/>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" class="form-control" id="subject" name="subject" required/>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" rows="5" id="message" name="message" required></textarea>
+              </div>
+              <div class="form-group">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
     );
   }
 }

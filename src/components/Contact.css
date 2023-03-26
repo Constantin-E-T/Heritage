@@ -1,6 +1,8 @@
 
 .map-container {
+    align-self: start;
     height: 400px;
+    width: 800px;
     }
 
 .marker {
@@ -28,3 +30,16 @@
 .marker b {
     transform: rotateZ(135deg)
       }
+
+.contact-container {
+    padding: 50px;
+}
+
+.contact {
+  margin-top: 10px;
+}
+
+#submmitButton {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
