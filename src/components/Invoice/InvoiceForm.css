@@ -1,4 +1,5 @@
-.invoice-form {
-    /* Add your custom styles for the Invoice form */
-  }
-  
+.left-align-label {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+}
