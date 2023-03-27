@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import './Contact.css';
@@ -87,6 +88,25 @@ export default class Contact extends Component {
                   placeholder='Name'
                   required
                 />
+=======
+import React, {Component} from 'react';
+import './Contact.css';
+import locationStatic from '../assets/images/locationStatic.jpg';
+ 
+
+export default class Contact extends Component {
+  render() {
+    return (
+      <div class='contact-container row'>
+        <img  class='col-md-7'
+              style={{height:'400px', width:'800px', paddingRight:'50px'}}
+              alt='Heritage Haulage Static Map Location'
+              src={locationStatic}/>
+          <form class='contact col-lg-5' name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required/>
+>>>>>>> cd0d10758810267826e084b5ebd548fda0b33f66
               </div>
               <div className='form-group'>
                 <label htmlFor='email' className='left-aligned-label'>
@@ -126,6 +146,7 @@ export default class Contact extends Component {
                   placeholder='Company Name'
                 />
               </div>
+<<<<<<< HEAD
               <button
                 type='submit'
                 className='btn btn-primary left-aligned-label my-4 btn-block text-center'
@@ -137,6 +158,10 @@ export default class Contact extends Component {
           <div className='col-md-6'>
             <div ref={this.mapContainer} className='map-container' />
           </div>
+=======
+              <button type="submit" class="btn btn-outline-warning">Submit</button>
+          </form>
+>>>>>>> cd0d10758810267826e084b5ebd548fda0b33f66
         </div>
         <Modal
           show={this.state.showModal}
