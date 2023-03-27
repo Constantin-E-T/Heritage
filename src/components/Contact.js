@@ -20,6 +20,7 @@ export default class Contact extends Component {
   componentDidMount() 
  {
   const { lng, lat, zoom } = this.state;
+  // eslint-disable-next-line no-unused-vars
   const map = new mapboxgl.Map({
     container: this.mapContainer.current,
     style: 'mapbox://styles/mapbox/streets-v12',
