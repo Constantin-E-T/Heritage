@@ -189,7 +189,7 @@ const InvoiceForm = () => {
         </Row>
 
         {!showPDFButtons && (
-          <Button variant="primary" type="submit" className="my-4">
+          <Button variant="primary" type="submit" className="my-4 btn-block">
             Generate Invoice
           </Button>
         )}

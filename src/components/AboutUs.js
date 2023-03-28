@@ -4,7 +4,7 @@ import styles from './About.module.css';
 class About extends Component {
   render() {
     return (
-      <div>
+      <div className="text-justify">
         <div className={`${styles.aboutContainer}`}>
           <h2 className={styles.section__title}>About Us</h2>
           <br></br>
