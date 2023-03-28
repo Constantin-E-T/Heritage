@@ -13,7 +13,6 @@ class Services extends Component {
           <a class="btn btn-primary" href="/invoice" role="button">Create Invoice</a>
           <a class="btn btn-primary" href="/contact" role="button">Request Quote</a>
         </div>
-        <br></br>
           <div class='row justify-content-center'>
             Our modern fleet ensures reliable and efficient services, ranging from single pallet deliveries to full load shipments. 
             Delivering to a wide variety of locations and working with several major ports we can guarantee you our service anywhere in the UK.
