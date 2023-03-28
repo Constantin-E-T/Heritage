@@ -66,8 +66,16 @@ h1{
   background-color: rgb(50, 77, 90);  
 }  
 
-.navbar-custom .navbar-brand,  
+ 
 .navbar-custom .navbar-text,
 .navbar-custom .nav-link {  
-  color: rgb(226, 195, 54);  
+  color: rgb(255, 255, 255);  
+}
+
+.navbar-custom .navbar-brand {
+  color: rgb(226, 195, 54);
+}
+
+.nav-link:hover{
+  color: rgb(226, 195, 54);
 }
