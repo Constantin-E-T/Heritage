@@ -11,7 +11,7 @@ class Navbar extends Component {
       style={{backgroundColor:'#094912'}}>
 
         <NavLink className="navbar-brand col-6" to="/">
-          <img style={{width: '350px', height: '120px'}} src={heritageLogo}/>
+          <img style={{width: '150px', height: '40px'}} src={heritageLogo} alt='logo'/>
         </NavLink>
         <button
           className="navbar-toggler"
