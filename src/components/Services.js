@@ -20,7 +20,7 @@ class Services extends Component {
         <div className='row'>
           <div className='col-md-4'>
             <br></br>
-            <ul style={{'list-style-type':'none'}}>
+            <ul style={{'listStyleType':'none'}}>
               <li><h6>Services include:</h6></li>
               <li>Container Transport </li>
               <li>Tautliners</li> 
@@ -32,7 +32,7 @@ class Services extends Component {
           </div>
           <div className='col-md-4'>
             <br></br>
-            <ul style={{'list-style-type':'none'}}>
+            <ul style={{'listStyleType':'none'}}>
               <li><h6>Some of the major areas we cover:</h6></li>
               <li>London</li>
               <li>Manchester</li> 
@@ -44,7 +44,7 @@ class Services extends Component {
           </div>
           <div className='col-md-4'>
             <br></br>
-            <ul style={{'list-style-type':'none'}}>
+            <ul style={{'listStyleType':'none'}}>
               <li><h6>Major Port locations:</h6></li>
               <li>Port of Southampton</li>
               <li>Port of Felixstowe</li> 
