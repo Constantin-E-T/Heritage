@@ -7,9 +7,11 @@ import Home from './components/Home'
 import Contact from './components/Contact'
 import About from './components/AboutUs';
 import Services from './components/Services';
+import InvoicePage from './components/InvoicePage';
 import Team from './components/Team';
 import Footer from './components/Footer';
 import MyChatbot from './components/Chatbot/Chatbot';
+
 
 class App extends Component {
   render() {
@@ -26,6 +28,7 @@ class App extends Component {
           <Route path="/services" Component={Services}/>
           <Route path="/contact" Component={Contact}/>
           <Route path="/team" Component={Team}/>
+          <Route path='/invoice' Component={InvoicePage}/>
         </Routes> 
         <Footer />
        </div>
