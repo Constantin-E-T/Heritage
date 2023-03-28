@@ -37,29 +37,33 @@
   }
 }
 
+h1{
+  font-family: "Times New Roman", Times, serif;
+}
+
 .navbar-nav li{
   padding-left:30px;
   padding-right:30px;
 }
 
 .btn {
-  background-color: rgb(3, 35, 104);
+  background-color: rgb(50, 77, 90);
 }
 
 .btn-primary{
   color:rgb(226, 195, 54);
-  background-color: rgb(3, 35, 104);
-  border-color: rgb(226, 195, 54);
+  background-color: rgb(50, 77, 90);
+  border-color: rgb(51, 51, 51);
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-  color: rgb(3, 35, 104);
-  background-color: rgb(226, 195, 54);
-  border-color: rgb(3, 35, 104);
+  color: rgb(226, 195, 54);
+  background-color: rgb(114, 120, 133);
+  border-color: rgb(51, 51, 51);
 }
 
 .navbar-custom {  
-  background-color: rgb(3, 35, 104);  
+  background-color: rgb(50, 77, 90);  
 }  
 
 .navbar-custom .navbar-brand,  

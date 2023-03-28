@@ -9,7 +9,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-lg navbar-custom" id='nav'>
 
         <NavLink className="navbar-brand d-lg-none" to="/">
-          <img style={{width: '175px', height: '75px'}} src={heritageLogo} alt='logo'/>
+          <h1>Heritage Haulage</h1>
         </NavLink>
 
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@ class Navbar extends Component {
           </ul>
           
           <a className="navbar-brand d-none d-lg-block img-fluid">
-            <img style={{width: '175px', height: '75px'}} src={heritageLogo} alt='logo'/>
+            <h1>Heritage Haulage</h1>
           </a>
           
           <ul className="navbar-nav">

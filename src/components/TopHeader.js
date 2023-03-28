@@ -3,7 +3,7 @@ import WeatherWidget from './WeatherWidget';
 
 const TopHeader = () => {
   return (
-    <div className="bg-dark text-white py-2">
+    <div className="navbar-custom text-white py-2">
       <div className="container">
         <div className="d-flex justify-content-between align-items-center">
           <WeatherWidget />
