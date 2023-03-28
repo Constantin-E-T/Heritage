@@ -7,8 +7,6 @@ class InvoicePage extends Component {
       <div>
         
         <InvoiceForm />
-        <a className="btn btn-primary row justify-content-center" href="/services" role="button">Return</a>
-        
       </div>
     );
   }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import heritageLogo from '../assets/images/heritageLogo.png';
 
 
 class Navbar extends Component {
@@ -30,9 +29,9 @@ class Navbar extends Component {
             </li>
           </ul>
           
-          <a className="navbar-brand d-none d-lg-block img-fluid">
+          <NavLink className="navbar-brand d-none d-lg-block img-fluid">
             <h1>Heritage Haulage</h1>
-          </a>
+          </NavLink>
           
           <ul className="navbar-nav">
             <li className="nav-item">

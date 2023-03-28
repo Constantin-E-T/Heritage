@@ -43,12 +43,23 @@ const InvoiceForm = () => {
   };
 
   const handleBack = () => {
+    setFormData({
+      customerName: "",
+      customerEmail: "",
+      invoiceNumber: "",
+      orderDate: "",
+      dueDate: "",
+      origin: "",
+      destination: "",
+      weight: "",
+      rate: "",
+      totalAmount: "",
+    });
     setShowPDFButtons(false);
   };
 
   return (
-    <Container className="invoice-form">
-      <h1>Create Invoice</h1>
+    <Container className="invoice-form my-5">
       <Form onSubmit={handleSubmit}>
         <Row>
           <Col xs={12} md={6}>

@@ -1,7 +1,7 @@
 import React from "react";
 import { jsPDF } from "jspdf";
 import "jspdf-autotable";
-import { Button } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 
 const InvoicePDF = ({
   data,
@@ -20,10 +20,10 @@ const InvoicePDF = ({
     doc.setFontSize(18);
     doc.text(companyInfo.name, 10, 20);
     doc.setFontSize(12);
-    doc.text(companyInfo.addressLine1, 10, 30);
-    doc.text(companyInfo.addressLine2, 10, 35);
-    doc.text(companyInfo.addressLine3, 10, 40);
-    doc.text("Phone: " + companyInfo.phone, 10, 45);
+    doc.text(companyInfo.address.addressLine1, 10, 30);
+    doc.text(companyInfo.address.addressLine2, 10, 35);
+    doc.text(companyInfo.address.addressLine3, 10, 40);
+    doc.text("Phone: " + companyInfo.address.phone, 10, 45);
 
     // Add the invoice information
     doc.text("Invoice No: " + data.invoiceNumber, 150, 20);
@@ -60,13 +60,19 @@ const InvoicePDF = ({
   }
 
   return (
-    <div className="invoice-pdf">
-      <Button variant="success" onClick={generatePDF} className="my-4">
-        Download Invoice
-      </Button>
-      <Button variant="secondary" onClick={onBack} className="ml-2 my-4">
-        Clear the Form
-      </Button>
+    <div className="invoice-pdf my-4">
+      <Row>
+        <Col xs={12} md={6} className="my-2">
+          <Button variant="success" onClick={generatePDF} className="btn-block">
+            Download Invoice
+          </Button>
+        </Col>
+        <Col xs={12} md={6} className="my-2">
+          <Button variant="secondary" onClick={onBack} className="btn-block">
+            Clear the Form
+          </Button>
+        </Col>
+      </Row>
     </div>
   );
 };
