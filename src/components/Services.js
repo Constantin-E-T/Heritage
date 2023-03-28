@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Stockbanner from '../assets/images/Stockbanner.jpg'
-import styles from './Services.css'
 
 class Services extends Component {
   render() {
