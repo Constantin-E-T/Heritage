@@ -5,21 +5,21 @@ import styles from './Services.css'
 class Services extends Component {
   render() {
     return (
-      <div class='container text-justify'>
-        <h3 class='row justify-content-center'>
+      <div className='container text-justify'>
+        <h3 className='row justify-content-center'>
           Services
         </h3>
-        <div class='row justify-content-center'>
-          <a class="btn btn-primary" href="/invoice" role="button">Create Invoice</a>
-          <a class="btn btn-primary" href="/contact" role="button">Request Quote</a>
+        <div className='row justify-content-center'>
+          <a className="btn btn-primary" href="/invoice" role="button">Create Invoice</a>
+          <a className="btn btn-primary" href="/contact" role="button">Request Quote</a>
         </div>
-          <div class='row justify-content-center'>
+          <div className='row justify-content-center'>
             Our modern fleet ensures reliable and efficient services, ranging from single pallet deliveries to full load shipments. 
             Delivering to a wide variety of locations and working with several major ports we can guarantee you our service anywhere in the UK.
           </div>
           
-        <div class='row'>
-          <div class='col-md-4'>
+        <div className='row'>
+          <div className='col-md-4'>
             <br></br>
             <ul style={{'list-style-type':'none'}}>
               <li><h6>Services include:</h6></li>
@@ -31,7 +31,7 @@ class Services extends Component {
               <li>Single pallet deliveries</li>
               </ul>
           </div>
-          <div class='col-md-4'>
+          <div className='col-md-4'>
             <br></br>
             <ul style={{'list-style-type':'none'}}>
               <li><h6>Some of the major areas we cover:</h6></li>
@@ -43,7 +43,7 @@ class Services extends Component {
               <li>Liverpool</li>
               </ul>
           </div>
-          <div class='col-md-4'>
+          <div className='col-md-4'>
             <br></br>
             <ul style={{'list-style-type':'none'}}>
               <li><h6>Major Port locations:</h6></li>
@@ -55,7 +55,7 @@ class Services extends Component {
               </ul>
           </div>
         </div>
-        <img src={Stockbanner} class='img-fluid' alt='responsive banner img'/>
+        <img src={Stockbanner} className='img-fluid' alt='responsive banner img'/>
       </div>
     );
   }

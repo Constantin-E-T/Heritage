@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="jumbotron" id={styles.jumbotron}>
+      <div className="jumbotron my-5" id={styles.jumbotron}>
         <div
           className={`${styles.parallax} ${
             scrollPosition > 50 ? styles.scroll__animation : ''
