@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
+import Stockbanner from '../assets/images/Stockbanner.jpg'
+import styles from './Services.css'
 
 class Services extends Component {
   render() {
     return (
-      <div class='container'>
+      <div class='container text-justify'>
         <h3 class='row justify-content-center'>
           Services
         </h3>
+        <div class='row justify-content-center'>
+          <a class="btn btn-primary" href="/invoice" role="button">Create Invoice</a>
+          <a class="btn btn-primary" href="/contact" role="button">Request Quote</a>
+        </div>
         <br></br>
           <div class='row justify-content-center'>
             Our modern fleet ensures reliable and efficient services, ranging from single pallet deliveries to full load shipments. 
             Delivering to a wide variety of locations and working with several major ports we can guarantee you our service anywhere in the UK.
           </div>
           
-        <div class='row align-items'>
+        <div class='row'>
           <div class='col-md-4'>
             <br></br>
             <ul style={{'list-style-type':'none'}}>
@@ -50,10 +56,7 @@ class Services extends Component {
               </ul>
           </div>
         </div>
-        <div class='row justify-content-center'>
-          <a class="btn btn-primary" href="/invoice" role="button">Create Invoice</a>
-          <a class="btn btn-primary" href="/contact" role="button">Request Quote</a>
-        </div>
+        <img src={Stockbanner} class='img-fluid' alt='responsive banner img'/>
       </div>
     );
   }

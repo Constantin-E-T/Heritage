@@ -5,8 +5,10 @@ class InvoicePage extends Component {
   render() {
     return (
       <div>
+        
         <InvoiceForm />
-        <a class="btn btn-primary" href="/services" role="button">Cancel</a>
+        <a class="btn btn-primary row justify-content-center" href="/services" role="button">Return</a>
+        
       </div>
     );
   }

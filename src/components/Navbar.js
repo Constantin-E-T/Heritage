@@ -28,22 +28,22 @@ class Navbar extends Component {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about" style={{color:'#d4b080', fontSize:'large'}}>
+              <NavLink className="nav-link" to="/about" style={{color:'#c9944e', fontSize:'large'}}>
                 About Us
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/services" style={{color:'#d4b080', fontSize:'large'}}>
+              <NavLink className="nav-link" to="/services" style={{color:'#c9944e', fontSize:'large'}}>
                 Services
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact" style={{color:'#d4b080', fontSize:'large'}}>
+              <NavLink className="nav-link" to="/contact" style={{color:'#c9944e', fontSize:'large'}}>
                 Contact
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/team" style={{color:'#d4b080', fontSize:'large'}}>
+              <NavLink className="nav-link" to="/team" style={{color:'#c9944e', fontSize:'large'}}>
                 Drivers/Team
               </NavLink>
             </li>
