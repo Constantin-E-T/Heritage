@@ -21,7 +21,7 @@ const Footer = () => {
       <footer className="bg-dark text-white py-4">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 text-justify">
               <h5 className="mb-3">Web Application Development Team</h5>
               <ul className="list-unstyled">
                 {teamData.map((member, index) => (
@@ -34,7 +34,7 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div className="col-md-6 text-md-right">
+            <div className="col-md-6 text-md-right text-left">
               <p className="mb-3">Today's date: {currentDate}</p>
               <p className="mb-0"> <i className="fa fa-map-marker mr-2" aria-hidden="true"></i> Address:</p>
               <p className="mb-0">18 Blossom </p>
