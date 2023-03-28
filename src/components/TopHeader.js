@@ -17,7 +17,7 @@ const TopHeader = () => {
         <a href="tel:+1234567890" className="text-white">0808 188 9006</a>
         <span className="mx-3">|</span>
         <i className="fas fa-envelope mr-1"></i>
-        <a href="mailto:info@example.com" className="text-white">info@example.com</a>
+        <a href="mailto:info@example.com" className="text-white">info@heritagehaulage.com</a>
       </Col>
     </Row>
   </Container>
