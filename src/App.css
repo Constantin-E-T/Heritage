@@ -43,21 +43,27 @@
 }
 
 .btn {
-  background-color: #094912;
+  background-color: rgb(3, 35, 104);
 }
 
 .btn-primary{
-  color:#c9944e;
-  background-color: #094912;
-  border-color: #c9944e;
+  color:rgb(226, 195, 54);
+  background-color: rgb(3, 35, 104);
+  border-color: rgb(226, 195, 54);
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-  color: #094912;
-  background-color: #c9944e;
-  border-color: #094912;
+  color: rgb(3, 35, 104);
+  background-color: rgb(226, 195, 54);
+  border-color: rgb(3, 35, 104);
 }
 
-.img-fluid{
-  margin-bottom: 10px;
+.navbar-custom {  
+  background-color: rgb(3, 35, 104);  
+}  
+
+.navbar-custom .navbar-brand,  
+.navbar-custom .navbar-text,
+.navbar-custom .nav-link {  
+  color: rgb(226, 195, 54);  
 }
