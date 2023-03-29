@@ -7,11 +7,6 @@ import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
 
 class Services extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-  
   componentDidMount() {
     AOS.init({
       duration: 1500,
