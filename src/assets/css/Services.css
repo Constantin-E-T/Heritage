@@ -1,5 +1,30 @@
 .heading-line-height {
-    line-height: 3;
-    font-weight: bold;
+  line-height: 3;
+  font-weight: bold;
+}
+
+@keyframes wave {
+  0%, 100% {
+    text-shadow: 0 3px 2px #324d5a, 0 3px 4px #324d5a;
   }
-  
+  /* 50% {
+    text-shadow: 0 3px 4px #324d5a, 0 3px 6px #324d5a;
+  } */
+}
+
+.heading-with-icon {
+  display: inline-flex;
+  align-items: center;
+  color: #d4b07f;
+  position: relative;
+  animation: wave 5s infinite;
+}
+
+.icon {
+  margin-right: 5px;
+  font-size: 1.1em;
+}
+
+.heading-with-icon:hover .icon {
+  transform: scale(1.2);
+}
