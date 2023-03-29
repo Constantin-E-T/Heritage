@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react";
 import "./WeatherWidget.css";
-// import Skycons from "react-skycons";
 
 const WeatherWidget = () => {
   const [weather, setWeather] = useState(null);
