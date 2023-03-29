@@ -2,9 +2,9 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0d1aff31-42ec-4705-9e3e-e0df8d5842d4/deploy-status)](https://app.netlify.com/sites/heritage-haulage/deploys)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-![React](https://img.shields.io/badge/React-61.5%25-blue)
-![JavaScript](https://img.shields.io/badge/JavaScript-34.4%25-yellow)
-![CSS](https://img.shields.io/badge/CSS-4.1%25-purple)
+![HTML](https://img.shields.io/badge/HTML-7.4%25-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-81.7%25-yellow)
+![CSS](https://img.shields.io/badge/CSS-10.9%25-purple)
 
 Heritage Haulage is a web application built for a real HGV containers transport company that picks up and delivers containers to customers from UK ports across the country. This app is designed to provide information about the company, its services, and the team, while offering an interactive map on the contact page and a custom-built invoicing system for the owner to create invoices for the customers.
 
