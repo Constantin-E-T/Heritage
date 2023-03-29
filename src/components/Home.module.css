@@ -1,26 +1,31 @@
 #jumbotron {
-    background-image: url('../assets/images/main__home__page.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    height: 80vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  /* Sets the background image to cover the entire jumbotron */
+  background-image: url('../assets/images/main__home__page.jpeg');
+  background-size: cover;
+  /* Prevents the background image from repeating */
+  background-repeat: no-repeat;
+  /* Centers the background image within the jumbotron */
+  background-position: center;
+  /* Fixed position of the background image */
+  background-attachment: fixed;
+  /* Sets the height of the jumbotron to 80% of the viewport height */
+  height: 80vh;
+  /* Sets the font color to white */
+  color: white;
+  /* Aligns the text to the center vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Adds a shadow effect to the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
 
-  }
-  
-  .parallax {
-    transition: transform 0.3s ease;
-  }
-  
-  .scroll__animation {
-    transform: translateY(-10px);
-  }
-  
+.parallax {
+  /* Adds a smooth transition effect to the transform property */
+  transition: transform 0.3s ease;
+}
 
-  
-  
+.scroll__animation {
+  /* Applies a translateY transform to the element to create a scrolling effect */
+  transform: translateY(-10px);
+}

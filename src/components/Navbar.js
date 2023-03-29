@@ -3,18 +3,22 @@ import { NavLink } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// Initialize AOS library for animations
 AOS.init();
 
 class Navbar extends Component {
   componentDidMount() {
+    // Add scroll event listener when component is mounted
     window.addEventListener("scroll", this.handleScroll);
   }
+
   componentWillUnmount() {
+    // Remove scroll event listener when component is unmounted
     window.removeEventListener("scroll", this.handleScroll);
   }
 
-
   handleScroll = () => {
+    // Handle the navbar button transformation on scroll
     const currentScrollPosition = window.pageYOffset;
     const button = document.querySelector(".navbar-toggler");
 
@@ -28,9 +32,14 @@ class Navbar extends Component {
 
     this.lastScrollPosition = currentScrollPosition;
   };
+
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-custom sticky-top" id="nav">
+      // Render the navbar with React Bootstrap components
+      <nav
+        className="navbar navbar-expand-lg navbar-custom sticky-top"
+        id="nav"
+      >
         <NavLink className="navbar-brand d-lg-none" to="/">
           <h1>Heritage Haulage</h1>
         </NavLink>

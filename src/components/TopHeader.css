@@ -1,12 +1,13 @@
+/* Flexbox layout that spans the full width of its container */
 .full-width-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .navbar-custom-light {
-    background-color: rgb(83, 115, 131);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Custom navbar with a light background color and box shadow */
+.navbar-custom-light {
+  background-color: rgb(83, 115, 131);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}

@@ -1,3 +1,4 @@
+/* Set position, display, margin, padding for the container */
 .aboutContainer{
   position:relative;
   display:block;
@@ -5,10 +6,10 @@
   margin-left: 4rem;
   padding:1rem;
   margin-top: 0.5rem;
+  }
   
-}
-
-.aboutContainer::before{
+  /* Add background image to the container */
+  .aboutContainer::before{
   content:"";
   background-image: url('../assets/images/tyreTracks.jpg');
   background-repeat: no-repeat;
@@ -22,27 +23,32 @@
   width:auto;
   height:auto;
   z-index:-3;
-}
-
-/* above is test */
-
-.section__title {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: rem;
   }
   
+  /* Set font-weight, font-size, margin-top and margin-bottom for section title */
+  .section__title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: rem;
+  }
+  
+  /* Set color for highlighted text */
   .highlight {
-    color: #d4b07f;
+  color: #d4b07f;
   }
   
+  /* Set font-size for large text */
   .text__large {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
   }
   
+  /* Set margin-bottom for a paragraph */
   .mb__3 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
   }
-
-
+  
+  
+  
+  
+  

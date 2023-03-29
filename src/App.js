@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import TopHeader from './components/TopHeader';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+// Importing individual page components
 import Home from './components/Home'
 import Contact from './components/Contact'
 import About from './components/AboutUs';
@@ -19,9 +20,12 @@ class App extends Component {
     <Router>
         
        <div className="App">
+        {/* Chatbot component */}
         <MyChatbot />
+        {/* Top header and Navbar components */}
         <TopHeader />
         <Navbar />
+        {/* Routes to individual pages */}
         <Routes>
           <Route path="/" Component={Home} /> 
           <Route path="/about" Component={About}/>
@@ -30,9 +34,10 @@ class App extends Component {
           <Route path="/team" Component={Team}/>
           <Route path='/invoice' Component={InvoicePage}/>
         </Routes> 
+        {/* Footer component */}
         <Footer />
        </div>
-        
+          
     </Router>
     );
   }

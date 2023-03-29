@@ -1,22 +1,26 @@
 /* ./src/components/Chatbot/Chatbot.css */
-.chatbot-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-  }
-  
-  .chatbot-button {
-    font-size: 24px;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .chatbot-position {
-    position: absolute;
-    bottom: 80px;
-    right: 50px;
-  }
+/* Set the chatbot container to a fixed position at the bottom right of the screen */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Style the chatbot button to be a circle with a 24px font size and centered text */
+.chatbot-button {
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Position the chatbot relative to its container to allow for proper positioning on the screen */
+.chatbot-position {
+  position: absolute;
+  bottom: 80px;
+  right: 50px;
+}

@@ -20,12 +20,13 @@ const InvoiceForm = () => {
     rate: "",
     totalAmount: "",
   });
-
+  // Update the form data when user types in the input fields
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevState) => {
       const updatedState = { ...prevState, [name]: value };
-
+      
+      // If weight or rate input field changes, calculate total amount
       if (name === "weight" || name === "rate") {
         const weight = parseFloat(updatedState.weight) || 0;
         const rate = parseFloat(updatedState.rate) || 0;
@@ -35,13 +36,13 @@ const InvoiceForm = () => {
       return updatedState;
     });
   };
-
+  // When user submits the form, set invoice data and show PDF buttons
   const handleSubmit = (event) => {
     event.preventDefault();
     setInvoiceData(formData);
     setShowPDFButtons(true);
   };
-
+  // When user clicks "back" button, reset the form and hide PDF buttons
   const handleBack = () => {
     setFormData({
       customerName: "",

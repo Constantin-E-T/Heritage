@@ -9,12 +9,14 @@ class About extends Component {
       <Helmet>
         <title>Heritage Haulage - About Us</title>
       </Helmet>
+      {/* Render about section */}
       <div className="text-justify ">
         <div className={`${styles.aboutContainer}`}>
           <h2 className={styles.section__title}>About Us</h2>
           <br></br>
           <br></br>
           <br></br>
+          {/* Company description */}
           <p className="mb-3">
             <span className={`${styles.highlight} ${styles.text__large}`}>
               Heritage Haulage
@@ -25,6 +27,7 @@ class About extends Component {
             road haulage business that are a highly versatile logistics company
             offering competitive delivery rates.
           </p>
+          {/* Further details */}
           <p className="mb__3">
             Offering personalised, uniquely tailored, cost effective
             transportation, logistics and road haulage solutions for a varied

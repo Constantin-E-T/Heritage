@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import Stockbanner from "../assets/images/Stockbanner.jpg";
-import "../assets/css/Services.css";
-import "font-awesome/css/font-awesome.min.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { Helmet } from "react-helmet";
+import "../assets/css/Services.css"; // Import CSS file for global styles
+import "font-awesome/css/font-awesome.min.css"; // Import Font Awesome icons
+import AOS from "aos"; // Import AOS library for animations
+import "aos/dist/aos.css"; // Import AOS styles
+import { Helmet } from "react-helmet"; // Import Helmet to manage document head
 
 class Services extends Component {
   componentDidMount() {
+    // Initialize AOS with custom settings on mount
     AOS.init({
       duration: 1500,
     });
@@ -16,15 +17,18 @@ class Services extends Component {
   render() {
     return (
       <div>
+        {/* Set the document title using Helmet */}
         <Helmet>
           <title>Heritage Haulage - Services</title>
         </Helmet>
         <div className="container text-justify">
+          {/* Render the main content of the page */}
           <div className="container my-5" data-aos="fade-up">
             <h4 className="heading-line-height">Services</h4>
 
             <div className="row" style={{ marginTop: "2rem" }}>
               <div className="col-12 col-md-6" data-aos="fade-right">
+                {/* Render buttons for creating an invoice and requesting a quote */}
                 <div className="d-flex flex-column mt-2">
                   <a
                     className="btn btn-primary btn-block mb-4"
@@ -46,6 +50,7 @@ class Services extends Component {
                 className="col-12 col-md-6 text-center text-md-left"
                 data-aos="fade-left"
               >
+                {/* Render text describing the company's services and fleet */}
                 Our modern fleet ensures reliable and efficient services,
                 ranging from single pallet deliveries to full load shipments.
                 Delivering to a wide variety of locations and working with
@@ -55,8 +60,10 @@ class Services extends Component {
             </div>
           </div>
 
+          {/* Render a horizontal rule with animation */}
           <hr data-aos="fade-up" data-aos-delay="100"></hr>
           <div className="row" data-aos="fade-up" data-aos-delay="200">
+            {/* Render three columns with bullet points for services, areas, and port locations */}
             <div className="col-xl-4 p-0">
               <ul style={{ listStyleType: "none" }}>
                 <li>
@@ -106,6 +113,7 @@ class Services extends Component {
               </ul>
             </div>
           </div>
+          {/* Render an image banner with animation */}
           <img
             src={Stockbanner}
             className="img-fluid mb-5"

@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
-import "./Contact.css";
-import emailjs from "emailjs-com";
-import companyInfo from "./Invoice/companyInfo.json";
-import { Modal, Button } from "react-bootstrap";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { Helmet } from "react-helmet";
+import "./Contact.css"; // Import custom CSS styles for Contact page
+import emailjs from "emailjs-com"; // Import emailjs library for sending emails
+import companyInfo from "./Invoice/companyInfo.json"; // Import company information from JSON file
+import { Modal, Button } from "react-bootstrap"; // Import Bootstrap components for modal
+import AOS from "aos"; // Import AOS library for animation effects
+import "aos/dist/aos.css"; // Import CSS styles for AOS animations
+import { Helmet } from "react-helmet"; // Import Helmet library for managing document head
+
 
 // Replace these with your own EmailJS credentials
 const EMAILJS_SERVICE_ID = "service_qapgq78";
@@ -17,6 +18,7 @@ mapboxgl.accessToken =
 export default class Contact extends Component {
   constructor(props) {
     super(props);
+    // Initialize state variables
     this.state = {
       lng: -1.1013463074087266,
       lat: 50.80151276175477,
@@ -27,16 +29,20 @@ export default class Contact extends Component {
     };
     this.mapContainer = React.createRef();
   }
+  // Run this code when component mounts
   componentDidMount() {
+    // Get location data from companyInfo
     const { lng, lat, zoom } = this.state;
     const { address } = companyInfo;
     const { latitude, longitude } = address;
+    // Create new Mapbox map instance
     const map = new mapboxgl.Map({
       container: this.mapContainer.current,
       style: "mapbox://styles/mapbox/streets-v12",
       center: [lng, lat],
       zoom: zoom,
     });
+    // Create custom marker element and add it to map
     const markerElement = document.createElement("div");
     markerElement.className = "custom-marker";
     markerElement.textContent = "H";
@@ -48,12 +54,15 @@ export default class Contact extends Component {
       duration: 1500, // The duration of the animations in milliseconds
     });
   }
+  // Function to handle closing modal
   handleCloseModal = () => {
     this.setState({ showModal: false });
   };
+  // Function to handle opening modal with custom title and body
   handleOpenModal = (title, body) => {
     this.setState({ showModal: true, modalTitle: title, modalBody: body });
   };
+  // Function to send email using emailjs library
   sendEmail = (e) => {
     e.preventDefault();
     emailjs

@@ -1,46 +1,51 @@
-
+/* Styling for the map container */
 .map-container {
   height: 60vh;
   width: 100%;
 }
+
+/* Styling for left-aligned labels */
 .left-aligned-label {
   text-align: left;
   display: block;
 }
-.custom-marker {
-    color: #570808;
-    font-weight: bold;
-    cursor: pointer;
-      }
-      
-.marker  span {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    box-sizing:border-box;
-    width: 30px;
-    height: 30px;
-    color:#fff;
-    background: #4D2D73;
-    border:solid 2px;
-    border-radius: 0 70% 70%;
-    box-shadow:0 0 2px #000;
-    cursor: pointer;
-    transform-origin:0 0;
-    transform: rotateZ(-135deg);
-      }
-      
-.marker b {
-    transform: rotateZ(135deg)
-      }
 
-.contact-container {
-    padding: 50px;
+/* Styling for the custom map marker */
+.custom-marker {
+  color: #570808;
+  font-weight: bold;
+  cursor: pointer;
 }
 
+/* Styling for the marker content */
+.marker span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background: #4d2d73;
+  border: solid 2px;
+  border-radius: 0 70% 70%;
+  box-shadow: 0 0 2px #000;
+  cursor: pointer;
+  transform-origin: 0 0;
+  transform: rotateZ(-135deg);
+}
+
+/* Styling for the marker text */
+.marker b {
+  transform: rotateZ(135deg);
+}
+
+/* Styling for the contact container */
+.contact-container {
+  padding: 50px;
+}
+
+/* Styling for the contact form */
 .contact {
   margin-top: 10px;
 }
-
-
-

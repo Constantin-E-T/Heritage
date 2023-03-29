@@ -10,11 +10,13 @@ const Footer = () => {
   const currentYear = moment().format("YYYY");
 
   useEffect(() => {
+    // Update current date every minute
     const timer = setInterval(() => {
       setCurrentDate(moment().format("MMMM Do, YYYY"));
     }, 60000);
 
     return () => {
+      // Clear the interval when component is unmounted
       clearInterval(timer);
     };
   }, []);
