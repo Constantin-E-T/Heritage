@@ -20,7 +20,7 @@ class Navbar extends Component {
 
     if (currentScrollPosition > this.lastScrollPosition) {
       // Scrolling down
-      button.style.transform = "translateX(80px)";
+      button.style.transform = "translateX(-40px)";
     } else {
       // Scrolling up or initial position
       button.style.transform = "translateX(0)";
