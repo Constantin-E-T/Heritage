@@ -83,7 +83,7 @@ class Navbar extends Component {
             <h1>Heritage Haulage</h1>
           </NavLink>
 
-          <div className="ml-auto">
+          <div className="">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <NavLink className="nav-link" to="/services">
