@@ -6,6 +6,7 @@ import companyInfo from "./Invoice/companyInfo.json";
 import { Modal, Button } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet";
 
 // Replace these with your own EmailJS credentials
 const EMAILJS_SERVICE_ID = "service_qapgq78";
@@ -78,90 +79,95 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <div className="container my-5" data-aos="fade-up">
-        <div className="row">
-          <div className="col-md-6" data-aos="fade-left">
-            <h3 className="left-aligned-label">Contact Us</h3>
-            <form onSubmit={this.sendEmail}>
-              <div className="form-group">
-                <label htmlFor="from_name" className="left-aligned-label">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="from_name"
-                  name="from_name"
-                  placeholder="Name"
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email" className="left-aligned-label">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message" className="left-aligned-label">
-                  Message
-                </label>
-                <textarea
-                  className="form-control"
-                  id="message"
-                  name="message"
-                  rows="3"
-                  placeholder="Message"
-                  required
-                ></textarea>
-              </div>
-              <div className="form-group">
-                <label htmlFor="company_name" className="left-aligned-label">
-                  Company Name (optional)
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="company_name"
-                  name="company_name"
-                  placeholder="Company Name"
-                />
-              </div>
-              <button
-                type="submit"
-                className="btn btn-primary left-aligned-label my-4 btn-block text-center"
-              >
-                Submit
-              </button>
-            </form>
+      <>
+        <Helmet>
+          <title>Heritage Haulage - Contact</title>
+        </Helmet>
+        <div className="container my-5" data-aos="fade-up">
+          <div className="row">
+            <div className="col-md-6" data-aos="fade-left">
+              <h3 className="left-aligned-label">Contact Us</h3>
+              <form onSubmit={this.sendEmail}>
+                <div className="form-group">
+                  <label htmlFor="from_name" className="left-aligned-label">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="from_name"
+                    name="from_name"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="email" className="left-aligned-label">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="message" className="left-aligned-label">
+                    Message
+                  </label>
+                  <textarea
+                    className="form-control"
+                    id="message"
+                    name="message"
+                    rows="3"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div className="form-group">
+                  <label htmlFor="company_name" className="left-aligned-label">
+                    Company Name (optional)
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="company_name"
+                    name="company_name"
+                    placeholder="Company Name"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="btn btn-primary left-aligned-label my-4 btn-block text-center"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div className="col-md-6" data-aos="fade-right">
+              <div ref={this.mapContainer} className="map-container" />
+            </div>
           </div>
-          <div className="col-md-6" data-aos="fade-right">
-            <div ref={this.mapContainer} className="map-container" />
-          </div>
+          <Modal
+            show={this.state.showModal}
+            onHide={this.handleCloseModal}
+            centered
+          >
+            <Modal.Header closeButton className="modal-header">
+              <Modal.Title>{this.state.modalTitle}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>{this.state.modalBody}</Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={this.handleCloseModal}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
         </div>
-        <Modal
-          show={this.state.showModal}
-          onHide={this.handleCloseModal}
-          centered
-        >
-          <Modal.Header closeButton className="modal-header">
-            <Modal.Title>{this.state.modalTitle}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>{this.state.modalBody}</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={this.handleCloseModal}>
-              Close
-            </Button>
-          </Modal.Footer>
-        </Modal>
-      </div>
+      </>
     );
   }
 }

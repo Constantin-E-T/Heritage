@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import styles from './About.module.css';
+import { Helmet } from "react-helmet";
 
 class About extends Component {
   render() {
     return (
+      <>
+      <Helmet>
+        <title>Heritage Haulage - About Us</title>
+      </Helmet>
       <div className="text-justify ">
         <div className={`${styles.aboutContainer}`}>
           <h2 className={styles.section__title}>About Us</h2>
@@ -36,6 +41,7 @@ class About extends Component {
           <br></br>
         </div>
       </div>
+      </>
     );
   }
 }

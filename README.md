@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Heritage Haulage - HGV Container Transport
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0d1aff31-42ec-4705-9e3e-e0df8d5842d4/deploy-status)](https://app.netlify.com/sites/heritage-haulage/deploys)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+![React](https://img.shields.io/badge/React-61.5%25-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-34.4%25-yellow)
+![CSS](https://img.shields.io/badge/CSS-4.1%25-purple)
 
-## Available Scripts
+Heritage Haulage is a web application built for a real HGV containers transport company that picks up and delivers containers to customers from UK ports across the country. This app is designed to provide information about the company, its services, and the team, while offering an interactive map on the contact page and a custom-built invoicing system for the owner to create invoices for the customers.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+1. [Live Demo](#live-demo)
+2. [Features](#features)
+3. [Screenshots](#screenshots)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Project Structure](#project-structure)
+7. [Tech Stack](#tech-stack)
+8. [Credits](#credits)
+9. [Contribution Guidelines](#contribution-guidelines)
+10. [Future Enhancements](#future-enhancements)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🚀 Check out the live demo of the Heritage Haulage web app: [Heritage Haulage](https://heritage-haulage.netlify.app)
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Responsive design:** The application is optimized for seamless use on various devices, including desktops, tablets, and smartphones.
+- **Interactive map integration:** The contact page features an interactive map for users to easily identify the company's location and nearby facilities.
+- **Custom-built invoicing system:** The owner can effortlessly create and manage invoices for customers using the intuitive invoicing system.
+- **Informative pages:** Dedicated pages provide detailed information about the company's history, services, and team members.
+- **Integrated chatbot:** A chatbot is available to answer user queries and provide support when needed.
+- **Weather widget integration:** A weather widget displays up-to-date weather information for users' convenience.
+- **Contact form:** An easy-to-use contact form allows users to submit inquiries directly from the application.
 
-### `npm run build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Home Page](./public/images/home__page.png)
+![Invoice Page](./public/images/invoice__page.png)
+![Contact Page](./public/images/contact__page.png)
+![ChatBot Page](./public/images/chatbot__page.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+git clone <https://github.com/yourusername/heritage-haulage.git>
 
-### `npm run eject`
+2. Install the dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+cd heritage-haulage
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Run the application:
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Open a browser and navigate to `http://localhost:3000`. The web application should now be running and accessible.
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application is structured as follows:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `src/`: Main source code directory
+- `assets/`: Contains CSS, data, images, and JavaScript files
+- `components/`: Contains all React components, including pages, header, footer, chatbot, invoice form, and more
+- `App.js`: Main React component that holds the application's routing logic
+- `index.js`: Entry point for the application
 
-### Code Splitting
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- React: A JavaScript library for building user interfaces.
+- JavaScript: The core programming language used for implementing the application's functionality.
+- CSS: Used for styling the application and creating a responsive design.
+- Node.js: The runtime environment for executing the server-side JavaScript code.
+- npm: The package manager for managing dependencies and scripts.
 
-### Analyzing the Bundle Size
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Constantin Emilian Tivlica](https://github.com/Constantin-E-T) - Developer
+- [Keanu Knighton](https://github.com/MoxyK) - Developer
 
-### Making a Progressive Web App
+## Contribution Guidelines
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+We welcome contributions to the Heritage Haulage project. If you'd like to contribute, please follow these steps:
 
-### Advanced Configuration
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Make your changes and commit them to your branch.
+4. Submit a pull request with a clear description of your changes.
+5. Please make sure your code follows best practices and adheres to the existing code style.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Future Enhancements
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Integration of real-time container tracking for customers to track their shipments.
+- Implementation of a customer portal for managing orders and viewing invoice history.
+- Expansion of the chatbot's capabilities to provide more detailed information and support.
+- Implementing a booking system for customers to schedule pickups and deliveries online.
+- Enhanced security features to protect user data and ensure privacy.
+- Integration of a notification system to keep customers informed about important updates and changes.

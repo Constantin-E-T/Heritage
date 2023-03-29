@@ -9,10 +9,10 @@ class Navbar extends Component {
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
   }
-
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
   }
+
 
   handleScroll = () => {
     const currentScrollPosition = window.pageYOffset;
@@ -30,7 +30,7 @@ class Navbar extends Component {
   };
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-custom" id="nav">
+      <nav className="navbar navbar-expand-lg navbar-custom sticky-top" id="nav">
         <NavLink className="navbar-brand d-lg-none" to="/">
           <h1>Heritage Haulage</h1>
         </NavLink>

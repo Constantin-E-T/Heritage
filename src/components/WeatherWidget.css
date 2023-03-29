@@ -1,0 +1,24 @@
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .loading-text {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-image: linear-gradient(45deg, #D4B07F, #324D5A, #537383);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradient 3s linear infinite, bouncing 1.2s infinite;
+  }
+  
