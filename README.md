@@ -45,12 +45,11 @@ Heritage Haulage is a web application built for a real HGV containers transport 
 ## Installation
 
 1. Clone the repository:
-git clone <https://github.com/yourusername/heritage-haulage.git>
+git clone <https://github.com/Constantin-E-T/heritage-haulage.git>
 
 2. Install the dependencies:
-
-cd heritage-haulage
-npm install
+    cd heritage-haulage
+    npm install
 
 3. Run the application:
 npm start
