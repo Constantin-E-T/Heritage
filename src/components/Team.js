@@ -28,7 +28,7 @@ const Team = () => {
                   alt={`${member.name}`}
                   className={`card-img-top ${styles.profile__image}`}
                 />
-                <div className="card-body">
+                <div className="card-body bg-custom-1">
                   {/* Render the member's name, role, and truck registration (if applicable) */}
                   <h5 className="card-title">{member.name}</h5>
                   <h6 className="card-subtitle mb-2 text-muted">

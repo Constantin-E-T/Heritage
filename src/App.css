@@ -60,3 +60,7 @@ h1{
 .nav-link:hover{
   color: rgb(212, 176, 127)
 }
+
+.bg-custom-1 {
+  background-color: rgb(212, 176, 127);
+}
