@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Home.module.css";
 import { Helmet } from "react-helmet";
+import AOS from "aos"; // Import AOS library for animations
+import "aos/dist/aos.css"; // Import AOS styles
 
 const Home = () => {
   // Initialize state for scroll position
   const [scrollPosition, setScrollPosition] = useState(0);
+  // Initialize AOS with custom settings on mount
+  AOS.init({
+    duration: 1500,
+  });
 
   // Update state for scroll position on scroll event
   useEffect(() => {
@@ -31,8 +37,8 @@ const Home = () => {
             scrollPosition > 50 ? styles.scroll__animation : ""
           }`}
         >
-          <h1 className="display-4">Your trusted haulage partner</h1>
-          <h3 className="lead">Portsmouth. UK</h3>
+          <h1 className="display-4" data-aos="fade-down">Your trusted haulage partner</h1>
+          <h3 className="lead" data-aos="fade-up" data-aos-delay="200">Portsmouth. UK</h3>
         </div>
       </div>
     </div>

@@ -62,7 +62,7 @@ class Services extends Component {
 
           {/* Render a horizontal rule with animation */}
           <hr data-aos="fade-up" data-aos-delay="100"></hr>
-          <div className="row" data-aos="fade-up" data-aos-delay="200">
+          <div className="row" data-aos="fade-up" data-aos-delay="400">
             {/* Render three columns with bullet points for services, areas, and port locations */}
             <div className="col-xl-4 p-0">
               <ul style={{ listStyleType: "none" }}>

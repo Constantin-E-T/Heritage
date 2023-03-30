@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
+import AOS from "aos"; // Import AOS library for animations
+import "aos/dist/aos.css"; // Import AOS styles
 
 import teamData from "../assets/data/developers.json";
 
@@ -8,6 +10,10 @@ const Footer = () => {
     moment().format("MMMM Do, YYYY")
   );
   const currentYear = moment().format("YYYY");
+
+  AOS.init({
+    duration: 1500,
+  });
 
   useEffect(() => {
     // Update current date every minute
@@ -25,7 +31,7 @@ const Footer = () => {
     <footer className="navbar-custom text-white py-4">
       <div className="container">
         <div className="row">
-          <div className="col-md-6 text-justify">
+          <div className="col-md-6 text-justify" data-aos="fade-right" data-aos-delay="200">
             <h5 className="mb-3">Web Application Development Team</h5>
             <ul className="list-unstyled">
               {teamData.map((member, index) => (
@@ -43,7 +49,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="col-md-6 text-md-right text-left">
+          <div className="col-md-6 text-md-right text-left" data-aos="fade-left" data-aos-delay="400">
             <p className="mb-3">Today's date: {currentDate}</p>
             <p className="mb-0 text-white">
               {" "}
