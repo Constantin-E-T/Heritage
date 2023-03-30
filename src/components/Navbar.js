@@ -81,8 +81,8 @@ class Navbar extends Component {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/contact">
-                  Contact
+                <NavLink className="nav-link" to="/services">
+                  Services
                 </NavLink>
               </li>
             </ul>
@@ -95,8 +95,8 @@ class Navbar extends Component {
           <div className="">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/services">
-                  Services
+                <NavLink className="nav-link" to="/contact">
+                  Contact
                 </NavLink>
               </li>
               <li className="nav-item">
