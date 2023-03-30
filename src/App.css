@@ -38,7 +38,7 @@ h1{
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
   color: rgb(212, 176, 127);
-  background-color: rgb(114, 120, 133);
+  background-color: rgb(83, 115, 131);
   border-color: rgb(51, 51, 51);
 }
 
@@ -62,5 +62,9 @@ h1{
 }
 
 .bg-custom-1 {
+  background-color: rgb(212, 176, 127);
+}
+
+.chatbot-button {
   background-color: rgb(212, 176, 127);
 }
